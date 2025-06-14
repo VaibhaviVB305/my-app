@@ -1,0 +1,11 @@
+#root
+{
+  width: 100%;
+}
+.card > img{
+  max-width: 100px;
+}
+.device-img img
+{
+  max-width: 150px;
+}
