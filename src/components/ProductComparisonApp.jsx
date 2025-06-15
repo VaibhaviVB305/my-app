@@ -59,6 +59,15 @@ const products = [
 
 export default function ProductComparisonApp() {
   const [compareList, setCompareList] = useState([]);
+  const [darkMode, setDarkMode] = useState(false);
+
+const toggleTheme = () => {
+  const newMode = !darkMode;
+  setDarkMode(newMode);
+  document.body.classList.toggle("dark-mode", newMode);
+  localStorage.setItem("theme", newMode ? "dark" : "light");
+};
+
 
   const toggleCompare = (product) => {
     if (compareList.find((p) => p.id === product.id)) {
@@ -78,9 +87,25 @@ export default function ProductComparisonApp() {
   );
 
   return (
-    <section className="py-3">
+    <section className="py-3 prod-comp-sec">
     <div className="container-fluid">
-      <h1 className="mb-4">Product Comparison</h1>
+      <div className="d-flex justify-content-between align-items-center mb-4">
+        <h1 className="mb-0">Product Comparison Tool</h1>
+        <div className="form-check form-switch">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            role="switch"
+            id="themeSwitch"
+            checked={darkMode}
+            onChange={toggleTheme}
+          />
+          <label className="form-check-label" htmlFor="themeSwitch">
+            {darkMode ? "Dark Mode" : "Light Mode"}
+          </label>
+        </div>
+      </div>
+
 
       {/* Comparison View */}
       {compareList.length >= 2 && (

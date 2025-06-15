@@ -9,3 +9,27 @@
 {
   max-width: 150px;
 }
+
+.prod-comp-sec
+{
+  height: 100vh;
+}
+
+/* Dark mode overrides using Bootstrap classes */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode .card {
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+body.dark-mode .btn-primary {
+  background-color: #0d6efd;
+}
+
+body.dark-mode .btn-secondary {
+  background-color: #6c757d;
+}
