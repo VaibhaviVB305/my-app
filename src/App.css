@@ -12,7 +12,7 @@
 
 .prod-comp-sec
 {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* Dark mode overrides using Bootstrap classes */
