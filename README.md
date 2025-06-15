@@ -1,14 +1,41 @@
-# React + Vite
+# 📱 Product Comparison App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive and responsive product comparison interface built using **React** and **Bootstrap 5**. Users can browse a list of products and compare up to 3 of them side-by-side with a toggleable dark/light theme.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ✅ Responsive product grid layout (phones, laptops, tablets)
+- ✅ Compare up to **3 products** side-by-side
+- ✅ "Add to Compare" and "Remove from Compare" buttons
+- ✅ Differences between features are clearly highlighted
+- ✅ **Theme switcher** (Light/Dark) using Bootstrap switch
+- ✅ Preference saved in **localStorage**
+- ✅ Fully built with **React functional components + Bootstrap CSS**
+- ✅ No 3rd-party component libraries (e.g., no ShadCN, Tailwind, or Material UI)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
 
-ok
+## ⚙️ Setup Instructions
+
+> Make sure you have **Node.js** and **npm** installed.
+
+1. **Clone this repository:**
+git clone https://github.com/your-username/product-comparison-app.git
+cd product-comparison-app
+
+2. Install dependencies
+npm install
+
+3. Start the development server
+npm start
+
+4. Open in browser
+Go to http://localhost:3000
+
+**Assumptions:**
+The app compares general tech products like phones, tablets, and laptops.
+Feature differences are parsed from strings like "Battery: 24h" by comparing the keys.
+Only basic product attributes (name, brand, price, features) are used.
+Bootstrap’s theme is extended with a simple dark-mode CSS class override.
