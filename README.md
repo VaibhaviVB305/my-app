@@ -1,23 +1,23 @@
-# 📱 Product Comparison App
+# Product Comparison App
 
 An interactive and responsive product comparison interface built using **React** and **Bootstrap 5**. Users can browse a list of products and compare up to 3 of them side-by-side with a toggleable dark/light theme.
 
 ---
 
-## 🚀 Features
+## Features
 
-- ✅ Responsive product grid layout (phones, laptops, tablets)
-- ✅ Compare up to **3 products** side-by-side
-- ✅ "Add to Compare" and "Remove from Compare" buttons
-- ✅ Differences between features are clearly highlighted
-- ✅ **Theme switcher** (Light/Dark) using Bootstrap switch
-- ✅ Preference saved in **localStorage**
-- ✅ Fully built with **React functional components + Bootstrap CSS**
-- ✅ No 3rd-party component libraries (e.g., no ShadCN, Tailwind, or Material UI)
+- Responsive product grid layout (phones, laptops, tablets)
+- Compare up to **3 products** side-by-side
+- "Add to Compare" and "Remove from Compare" buttons
+- Differences between features are clearly highlighted
+- **Theme switcher** (Light/Dark) using Bootstrap switch
+- Preference saved in **localStorage**
+- Fully built with **React functional components + Bootstrap CSS**
+- No 3rd-party component libraries (e.g., no ShadCN, Tailwind, or Material UI)
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 > Make sure you have **Node.js** and **npm** installed.
 
